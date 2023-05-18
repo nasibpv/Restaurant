@@ -1,0 +1,120 @@
+React js
+-------
+    javascript labarary used for front-end creation of webapps
+
+
+React installation
+------------------
+    gobal install:-
+        npm i -g creation-react-app appName  --installed version
+
+    node package module:-
+        -npx create-react-app appName
+
+
+::-react follow virtual DOM
+    -when we changeva small portion of code re-render the entire code (faster for angular)
+
+::-angular follows real DOM
+    :when we change small portion of code re-render only that portion
+
+::-building block of React          --  html css app(app is code for dynamic)
+
+::-building block of angular        --  html css js
+
+
+REACT (libarary)                      |          ANGULAR (framwork)
+-------------                         |          -------
+=> libarary of js                     |         => framwork of js
+=> virtual DOM                        |         => real DOM
+=> structure redifine(change)         |         => not change in structure
+
+
+Advantage of React
+------------------
+
+    1- react user virtual dom (faster)
+    2- resusable components
+    3- jsx (javascript xml)
+
+Components in react 
+-------------------
+
+    1-class Based 
+    2-function Based
+
+    statefull component 
+    stateless component
+
+    -react hooks  (useState)
+
+state
+-----
+object used to store data inside a component in react
+
+
+useState - react
+
+props
+-----
+to share datas from parent to child component  
+destructuring (props using another step)
+
+
+Api call in jsx
+---------------
+
+AJAX ()
+-----
+-xmlHttp
+-fatch
+-asynch await
+
+
+first working hook of a compoenet
+--------------------------------
+useEffect- React
+
+
+Redirection/Routing In React
+-------------------------
+
+react-router-dom      - libarary used for router
+
+three compoenets:-
+
+    => Browser Router            -  wrap the main  component inside browser route component
+    => Router                    -  wrap the component inside Router which need redirection 
+    => Routes                    -  wrap all the Router if we set morethan one component paths
+
+
+Link - a component in react-router-dom used for redirection 
+
+useParams  -  hook in react-rouetr-dom used to access params
+
+
+REDUX
+-----
+
+when coupling incress in components there is a chance for props during
+                                                          ------------
+
+couplimg - data sharing from parent to bchild
+props drilling - at time data sharing from parent to child if any intermediate
+compoenet have any  
+
+
+
+
+
+                                                          
+
+libarary for REDUX
+------------------
+
+redux
+
+Link- a compoenet in react-router-dom used for redirection
+----
+
+useParams  - hooh in react-router-dom used to access params
