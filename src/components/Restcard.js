@@ -9,7 +9,7 @@ function Restcard({restData}) {
           <Card style={{ width: '18rem'}}>
       <Card.Img variant="top" src={restData.photograph} />
       <Card.Body>
-        <Card.Title>{restData.name}</Card.Title>
+        <Card.Title className='card-title'>{restData.name}</Card.Title>
         <Card.Text>
           
           <p><strong>Cuisine Type</strong>{restData.cuisine_type}</p>

@@ -118,3 +118,49 @@ Link- a compoenet in react-router-dom used for redirection
 ----
 
 useParams  - hooh in react-router-dom used to access params
+
+
+
+
+REDUX
+-----
+.
+
+
+
+
+
+
+
+
+
+Store - a file to store datas in redux.
+        all componenets can access the datas inside store
+
+Librararys for redux 
+--------------------
+
+- redux
+-react-redux
+-redux-thunk
+
+npm i redux react-redux redux-thunk   (install redux all librarary)
+
+create store - method in redux used to create a store. [import {createStore}from "redux"],(redux-method(create-store))
+
+in redux middleware used to make redux as asynchronous (actually redux is sychronous so all asychronous function inside redux will behave as sychronous)
+
+thunk - used to create middleware
+
+spread operator (...) - one or more values apply
+
+hooks :-
+        useDispatch  - hook used to dispatch a function in a component
+        -----------
+        useSelector  - hook used to access data from componet
+        ----------
+
+htttp Methods in React 
+----------------------
+
+axios - librarary to call api

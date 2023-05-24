@@ -11,10 +11,10 @@ function Header() {
           alt=""
           src="https://i.postimg.cc/QNgsxtPy/357957c41b7e17be0d9f1de15403ae2a-png-wh860.png"
           width="30"
-          height="30"
+          height="35"
           className="d-inline-block align-top"
         />{' '}
-        Restaurant
+        All In Restaurant
       </Navbar.Brand>
     </Container>
   </Navbar></div>

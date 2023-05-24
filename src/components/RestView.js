@@ -4,25 +4,33 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Review from './Review';
 import OperatingTime from './OperatingTime';
-
+import { useSelector } from 'react-redux';
 function RestView() {
   const params=useParams()
   // console.log(params.d);
   // 
-  var [restData,setData]=useState([])
+  // var [restData,setData]=useState([])
   // 
-  const data=async()=>{
-   const result=await fetch('/restaurants.json')
-   result.json().then(data=>{
-    setData(data.restaurants)
-   })
-  }
+  // const data=async()=>{
+  //  const result=await fetch('/restaurants.json')
+  //  result.json().then(data=>{
+  //   setData(data.restaurants)
+  //  })
+  // }
   // console.log(restData);
-const restaurants=restData.find(item=>item.id==params.id)
-console.log(restaurants);
+
+// 
+
+//   const restaurants=restData.find(item=>item.id==params.id)
+// console.log(restaurants);
   useEffect(()=>{
-    data()
+    // data()
   },[])
+  const {restaurantList}=useSelector(state=>state.restaurantReducers)
+
+  const restaurants=restaurantList.find(item=>item.id==params.id)
+// console.log(restaurants);
+
   return (
  <>
  {
@@ -32,7 +40,7 @@ console.log(restaurants);
           <img src={restaurants.photograph} style={{width:"100%",height:"300px"}}></img>
           </Col>
           <Col lg={6} md={8} className=' p-2'>
-            <h1>{restaurants.name}</h1>
+            <h1 className='card-title'>{restaurants.name}</h1>
             <p><strong>neighborhood : </strong>{restaurants.neighborhood}</p>
             <p><strong>address : </strong>{restaurants.address}</p>
             <p><strong>cuisine_type : </strong>{restaurants.cuisine_type}</p>
